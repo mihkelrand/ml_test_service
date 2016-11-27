@@ -18,17 +18,17 @@ public class CompanyService {
 	@Produces("application/json")
 	public String courses()
 	{
-	String companies = null;
-	ArrayList<Company> companyList = new ArrayList<Company>();
-	try
-	{
-	companyList = new AccessManager().getCompanies();
-	Gson gson = new Gson();
-	companies = gson.toJson(companyList);
-	} catch (Exception e)
-	{
-	e.printStackTrace();
-	}
-	return companies;
+		String companies = null;
+		ArrayList<Company> companyList = new ArrayList<Company>();
+		try
+		{
+			companyList = new AccessManager().getCompanies();
+			Gson gson = new Gson();
+			companies = gson.toJson(companyList);
+		} catch (Exception e)
+		{
+			e.printStackTrace();
+		}
+		return companies;
 	}
 }
