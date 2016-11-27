@@ -1,9 +1,5 @@
 package webService;
 
-<<<<<<< HEAD
-=======
-
->>>>>>> branch 'master' of https://github.com/mihkelrand/ml_test_service
 import java.util.ArrayList;
 
 import javax.ws.rs.GET;

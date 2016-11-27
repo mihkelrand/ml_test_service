@@ -25,6 +25,7 @@ public class Access {
 	documentObj.setYear(rs.getInt("year"));
 	documentObj.setSeries(rs.getString("series"));
 	
+	//Siit on vaja edasi minna, et saaks üks mitmele seose luua ja, et company oleks documendiga seotud
 	//Siin jäi pooleli -- Kuidas kasutada Company mudelit et seda ühes päringus näidata.
 	//documentObj.setCompany(rs.getArray("name")); 
 	
