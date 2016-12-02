@@ -22,14 +22,8 @@ public class Access {
 				Document documentObj = new Document();
 				documentObj.setId(rs.getInt("id"));
 				documentObj.setName(rs.getString("name"));
-				documentObj.setYear(rs.getInt("year"));
-				documentObj.setSeries(rs.getString("series"));
+				documentObj.setYear(rs.getString("year"));
 				documentObj.setCompany(getCompanies(con).get(rs.getInt("companyId") - 1));
-
-				//Siit on vaja edasi minna, et saaks �ks mitmele seose luua ja, et company oleks documendiga seotud
-				//Siin j�i pooleli -- Kuidas kasutada Company mudelit et seda �hes p�ringus n�idata.
-				//documentObj.setCompany(rs.getArray("name")); 
-
 				documentList.add(documentObj);
 			}
 		} catch (SQLException e)

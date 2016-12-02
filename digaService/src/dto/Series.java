@@ -1,27 +1,17 @@
 package dto;
 
-public class Company {
+public class Series {
 
 	private int id;
-	private int code;
 	private String name;
 
-	public Company() {
+	public Series() {
 
 	}
 
-	public Company(int id, int code, String name) {
+	public Series(int id, String name) {
 		this.id = id;
-		this.code = code;
 		this.name = name;
-	}
-
-	public int getCode() {
-		return code;
-	}
-
-	public void setCode(int code) {
-		this.code = code;
 	}
 
 	public int getId() {
@@ -39,6 +29,4 @@ public class Company {
 	public void setName(String name) {
 		this.name = name;
 	}
-
-
 }
