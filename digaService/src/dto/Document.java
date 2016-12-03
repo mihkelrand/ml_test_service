@@ -5,7 +5,6 @@ public class Document {
 	private int id;
 	private String name;
 	private String mark;
-	private String form;
 	private String year;
 	private String exitYear;
 	private String intakeAct;
@@ -62,14 +61,6 @@ public class Document {
 
 	public void setMark(String mark) {
 		this.mark = mark;
-	}
-
-	public String getForm() {
-		return form;
-	}
-
-	public void setForm(String form) {
-		this.form = form;
 	}
 
 	public String getYear() {

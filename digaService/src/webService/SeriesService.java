@@ -8,26 +8,26 @@ import javax.ws.rs.Produces;
 
 import com.google.gson.Gson;
 
-import dto.Company;
+import dto.Series;
 import model.AccessManager;
 
-@Path("/companies")
-public class CompanyService {
+@Path("/series")
+public class SeriesService {
 	@GET
 	@Produces("application/json")
-	public String companies()
+	public String series()
 	{
-		String companies = null;
-		ArrayList<Company> companyList = new ArrayList<Company>();
+		String series = null;
+		ArrayList<Series> seriesList = new ArrayList<Series>();
 		try
 		{
-			companyList = new AccessManager().getCompanies();
+			seriesList = new AccessManager().getSeries();
 			Gson gson = new Gson();
-			companies = gson.toJson(companyList);
+			series = gson.toJson(seriesList);
 		} catch (Exception e)
 		{
 			e.printStackTrace();
 		}
-		return companies;
+		return series;
 	}
 }

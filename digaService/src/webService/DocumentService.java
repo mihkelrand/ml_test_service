@@ -13,11 +13,9 @@ import model.AccessManager;
 
 @Path("/documents")
 public class DocumentService {
-
 	@GET
-	@Path("")
 	@Produces("application/json")
-	public String courses()
+	public String documents()
 	{
 	String documents = null;
 	ArrayList<Document> documentList = new ArrayList<Document>();
