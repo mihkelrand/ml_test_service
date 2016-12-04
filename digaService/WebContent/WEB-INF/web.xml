@@ -10,13 +10,21 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   
-  <servlet>
-	<servlet-name>Diga Service</servlet-name>
-	<servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
-	<load-on-startup>1</load-on-startup>
-  </servlet>
-  <servlet-mapping>
-	<servlet-name>Diga Service</servlet-name>
-	<url-pattern>/*</url-pattern>
-   </servlet-mapping>
+  	<servlet>
+		<servlet-name>Diga Service</servlet-name>
+		<servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+		<load-on-startup>1</load-on-startup>
+  	</servlet>
+  	<servlet-mapping>
+		<servlet-name>Diga Service</servlet-name>
+		<url-pattern>/*</url-pattern>
+   	</servlet-mapping>
+   	<filter>
+    	<filter-name>CORS</filter-name>
+    	<filter-class>com.thetransactioncompany.cors.CORSFilter</filter-class>
+	</filter>
+	<filter-mapping>
+        <filter-name>CORS</filter-name>
+        <url-pattern>/*</url-pattern>
+	</filter-mapping>
 </web-app>
