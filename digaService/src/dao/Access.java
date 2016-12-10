@@ -78,6 +78,7 @@ public class Access {
 			{
 				Series seriesObj = new Series();
 				seriesObj.setId(rs.getInt("id"));
+				seriesObj.setCode(rs.getString("code"));
 				seriesObj.setName(rs.getString("name"));
 				seriesList.add(seriesObj);
 			}
